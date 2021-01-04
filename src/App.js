@@ -1,12 +1,12 @@
 import './App.css';
-import Map from './components/Map/Map'
+import 'antd/dist/antd.css';
+import Journey from './components/Journey/Journey';
 
+const journey = require('./test/mock/journey.mock.json');
 
 function App() {
   return (
-    <div className="App">
-      <Map />
-    </div>
+    <Journey journey={journey} />
   );
 }
 

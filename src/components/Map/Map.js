@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Leaflet from 'leaflet';
 import { 
     MapContainer, 
@@ -26,7 +26,7 @@ const Map = () => {
     ]
 
     return (
-        <MapContainer center={center} zoom={13} scrollWheelZoom={false} style={{width: '400px', height: '600px'}}>
+        <MapContainer center={center} zoom={13} scrollWheelZoom={false} style={{width: '600px', height: '1000px'}}>
           <LayersControl position="topright">
             <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
               <TileLayer
