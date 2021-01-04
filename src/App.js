@@ -1,12 +1,14 @@
-import './App.css';
+import { Provider } from 'react-redux';
 import 'antd/dist/antd.css';
-import Journey from './components/Journey/Journey';
+import Journey from './components/journey';
 
 const journey = require('./test/mock/journey.mock.json');
 
-function App() {
+const App = ({ store }) => {
   return (
-    <Journey journey={journey} />
+    <Provider store={store}>
+      <Journey journey={journey} />
+    </Provider>
   );
 }
 

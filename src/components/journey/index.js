@@ -1,6 +1,6 @@
 import React from 'react';
-import Trip from '../Trip/Trip';
-import Map from '../Map/Map';
+import Trip from '../trip';
+import Map from '../map';
 
 import { Row, Col } from 'antd';
 
