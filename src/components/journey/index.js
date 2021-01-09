@@ -11,7 +11,7 @@ const Journey = ({ journey }) => (
         <Trip journey={journey}/>
       </Col>
       <Col span={10}>
-        <Map/>
+        <Map placeName={'Hyde Park, London'} />
       </Col>
     </Row>
   </div>

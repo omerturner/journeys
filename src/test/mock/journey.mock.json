@@ -13,60 +13,99 @@
       "title": "Hyde Park",
       "type": "park",
       "location": [51.506814, -0.165580],
-      "images": [
+      "layout": [
         {
-          "original": "https://picsum.photos/id/1018/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+          "type": "text",
+          "order": 0,
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",  
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
         },
         {
-          "original": "https://picsum.photos/id/1018/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+          "type": "image",
+          "order": 1,
+          "properties": {
+            "src": "https://picsum.photos/id/1019/1000/600/",
+            "width": 400,
+            "height": 300,
+            "placeholder": true
+          }
         },
         {
-          "original": "https://picsum.photos/id/1019/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+          "type": "text",
+          "order": 2,
+          "properties": {
+            "text": [
+              "in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ]
+          }
+        },
+        {
+          "type": "gallery",
+          "order": 3,
+          "properties": {
+            "images": [
+              {
+                "original": "https://picsum.photos/id/1018/1000/600/",
+                "thumbnail": "https://picsum.photos/id/1018/250/150/"
+              },
+              {
+                "original": "https://picsum.photos/id/1018/1000/600/",
+                "thumbnail": "https://picsum.photos/id/1018/250/150/"
+              },
+              {
+                "original": "https://picsum.photos/id/1019/1000/600/"
+              }
+            ]
+          }
         }
-      ],
-      "links": [
-        "https://www.royalparks.org.uk/parks/hyde-park"
-      ],
-      "text": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",  
-        "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
-        "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
-        "in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       ]
     },
     {
       "id": 1123,
       "order": 0,
-      "title": "Buckingham Palace",
-      "type": "museum",
+      "title": "Hyde Park",
+      "type": "park",
       "location": [51.506814, -0.165580],
-      "images": [
+      "layout": [
         {
-          "original": "https://picsum.photos/id/1018/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+          "type": "text",
+          "order": 0,
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",  
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+              "in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ]
+          }
         },
         {
-          "original": "https://picsum.photos/id/1018/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1018/250/150/"
-        },
-        {
-          "original": "https://picsum.photos/id/1019/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+          "type": "gallery",
+          "order": 1,
+          "properties": {
+            "images": [
+              {
+                "original": "https://picsum.photos/id/1018/1000/600/",
+                "thumbnail": "https://picsum.photos/id/1018/250/150/"
+              },
+              {
+                "original": "https://picsum.photos/id/1018/1000/600/",
+                "thumbnail": "https://picsum.photos/id/1018/250/150/"
+              },
+              {
+                "original": "https://picsum.photos/id/1019/1000/600/",
+                "thumbnail": "https://picsum.photos/id/1019/250/150/"
+              }
+            ]
+          }
         }
-      ],
-      "links": [
-        "https://www.royalparks.org.uk/parks/hyde-park"
-      ],
-      "text": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",  
-        "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
-        "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
-        "in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       ]
     }
   ],

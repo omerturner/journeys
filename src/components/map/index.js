@@ -1,84 +1,113 @@
-import React from 'react'
-import Leaflet from 'leaflet';
-import { 
-    MapContainer, 
-    TileLayer, 
-    Marker, 
-    Popup, 
-    LayersControl, 
-    LayerGroup, 
-    FeatureGroup, 
-    Rectangle, 
-    Circle
-} from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-
-Leaflet.Icon.Default.imagePath =
-'../../../node_modules/leaflet';
+import { useSelector } from 'react-redux';
+import { journeySelector } from '../journey/journey.selectors';
+import styled from 'styled-components';
+import GoogleMapReact from 'google-map-react';
+import _ from 'lodash';
+import { useState } from 'react';
+import { Card, Rate, Tag, Image } from 'antd';
 
 
 
+const places = require('./places.json');
+ 
+const Wrapper = styled.main`
+  width: 100%;
+  height: 100vh;
+`;
+
+// InfoWindow component
+const InfoWindow = ({ place: { rating, name, categories, image_url } }) => {
+  const StyledInfoWindow = styled(Card)`
+    position: relative;
+    bottom: 400px;
+    left: -110px;
+    height: 360px;
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-ize: 14px;
+    z-index: 100;
+  `
+
+  return (
+    <StyledInfoWindow 
+      cover={<Image 
+        width={200} 
+        height={200} 
+        src={image_url} />}>
+      <Card.Meta title={name} description={
+        <>
+          <Rate allowHalf disabled defaultValue={rating} style={{ marginBottom: 15 }}/>
+          {
+            categories.slice(0,2).map(cat => <Tag>{cat.title}</Tag>)
+          }
+        </>
+      } />
+      
+    </StyledInfoWindow>
+  );
+};
+
+// Marker component
+const Marker = ({ place }) => {
+  const StlyedMarker = styled.div`
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    cursor: 'pointer';
+    &:hover {
+      z-index: 1;
+    }
+  `;
+
+  const [ showDetails, setShowDetails ] = useState(false);
+
+  return (
+    <>
+      <StlyedMarker 
+        onMouseEnter={() => setShowDetails(true)}
+        onMouseLeave={() => setShowDetails(false)}
+      />
+
+      {showDetails && <InfoWindow place={place} />}
+    </>
+  );
+};
+ 
 const Map = () => {
-    const center = [51.505, -0.09]
-    const rectangle = [
-    [51.49, -0.08],
-    [51.5, -0.06],
-    ]
 
-    return (
-        <MapContainer center={center} zoom={13} scrollWheelZoom={false} style={{width: '600px', height: '1000px'}}>
-          <LayersControl position="topright">
-            <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
-              <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-            </LayersControl.BaseLayer>
-            <LayersControl.BaseLayer name="OpenStreetMap.BlackAndWhite">
-              <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
-              />
-            </LayersControl.BaseLayer>
-            <LayersControl.Overlay name="Marker with popup">
-              <Marker position={center}>
-                <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-              </Marker>
-            </LayersControl.Overlay>
-            <LayersControl.Overlay checked name="Layer group with circles">
-              <LayerGroup>
-                <Circle
-                  center={center}
-                  pathOptions={{ fillColor: 'blue' }}
-                  radius={200}
-                />
-                <Circle
-                  center={center}
-                  pathOptions={{ fillColor: 'red' }}
-                  radius={100}
-                  stroke={false}
-                />
-                <LayerGroup>
-                  <Circle
-                    center={[51.51, -0.08]}
-                    pathOptions={{ color: 'green', fillColor: 'green' }}
-                    radius={100}
-                  />
-                </LayerGroup>
-              </LayerGroup>
-            </LayersControl.Overlay>
-            <LayersControl.Overlay name="Feature group">
-              <FeatureGroup pathOptions={{ color: 'purple' }}>
-                <Popup>Popup in FeatureGroup</Popup>
-                <Circle center={[51.51, -0.06]} radius={200} />
-                <Rectangle bounds={rectangle} />
-              </FeatureGroup>
-            </LayersControl.Overlay>
-          </LayersControl>
-        </MapContainer>
-    )
+  const journey = useSelector(journeySelector('london'));
+
+  const defaultProps = {
+    center: [34.0022, -118.4437],
+    zoom: 12
+  };
+ 
+  return (
+    <Wrapper>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: _.get(process.env, 'REACT_APP_GOOGLE_MAPS_API_KEY') }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        { 
+          places.businesses.map(place => (
+            <Marker 
+              lat={place.coordinates.latitude}
+              lng={place.coordinates.longitude}
+              place={place} />
+          ))
+        }
+
+      </GoogleMapReact>
+    </Wrapper>
+  );
+  
 }
-
+ 
 export default Map;
