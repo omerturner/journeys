@@ -5,13 +5,13 @@ import Map from '../map';
 import { Row, Col } from 'antd';
 
 const Journey = ({ journey }) => (
-  <div style={{ padding: 30 }}>
+  <div style={{ padding: 70 }}>
     <Row gutter={32}>
       <Col span={14}>
         <Trip journey={journey}/>
       </Col>
       <Col span={10}>
-        <Map placeName={'Hyde Park, London'} />
+        <Map journey={journey}/>
       </Col>
     </Row>
   </div>

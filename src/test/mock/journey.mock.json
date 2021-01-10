@@ -1,18 +1,112 @@
 {
   "id": 1,
-  "title": "London",
+  "title": "Bay Area",
   "slugifiedName": "london",
   "duration": {
-    "from": "2019-09-20",
-    "to": "2019-09-23"
+    "from": "2020-05-02T00:00:00",
+    "to": "2020-05-05T00:00:00"
   },
   "locations": [
     {
-      "id": 1122,
+      "id": 1121,
       "order": 0,
-      "title": "Hyde Park",
-      "type": "park",
-      "location": [51.506814, -0.165580],
+      "title": "Plant Food + Wine",
+      "type": "restaurant",
+      "image": {
+        "src": "https://s3-media1.fl.yelpcdn.com/bphoto/5-yscYwJYpFEQvzpqvTS_A/o.jpg",
+        "width": 600,
+        "height": 480
+      },
+      "url": "https://www.yelp.com/biz/plant-food-wine-venice?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA",
+      "review_count": 338,
+      "categories": [
+          {
+              "alias": "vegan",
+              "title": "Vegan"
+          },
+          {
+              "alias": "vegetarian",
+              "title": "Vegetarian"
+          },
+          {
+              "alias": "raw_food",
+              "title": "Live/Raw Food"
+          }
+      ],
+      "rating": 4,
+      "coordinates": {
+          "latitude": 33.99244,
+          "longitude": -118.47237
+      },
+      "location": {
+        "address1": "1009 Abbot Kinney Blvd",
+        "address2": null,
+        "address3": "",
+        "city": "Venice",
+        "zip_code": "90291",
+        "country": "US",
+        "state": "CA",
+        "display_address": [
+            "1009 Abbot Kinney Blvd",
+            "Venice, CA 90291"
+        ]
+      },
+      "layout": [
+        {
+          "type": "text",
+          "order": 0,
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",  
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 1122,
+      "order": 1,
+      "title": "Cafe Gratitude Venice",
+      "type": "restaurant",
+      "image": {
+        "src": "https://s3-media2.fl.yelpcdn.com/bphoto/39qNUZkblWnkVXvZugDWzg/o.jpg",
+        "width": 600,
+        "height": 480
+      },
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/cafe-gratitude-venice-venice?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA",
+      "review_count": 1111,
+      "categories": [
+          {
+              "alias": "vegan",
+              "title": "Vegan"
+          },
+          {
+              "alias": "cafes",
+              "title": "Cafes"
+          }
+      ],
+      "rating": 4,
+      "coordinates": {
+          "latitude": 33.9982167895474,
+          "longitude": -118.473767975767
+      },
+      "price": "$$",
+      "location": {
+          "address1": "512 Rose Ave",
+          "address2": "",
+          "address3": "",
+          "city": "Venice",
+          "zip_code": "90291",
+          "country": "US",
+          "state": "CA",
+          "display_address": [
+              "512 Rose Ave",
+              "Venice, CA 90291"
+          ]
+      },
       "layout": [
         {
           "type": "text",
@@ -25,54 +119,6 @@
             ]
           }
         },
-        {
-          "type": "image",
-          "order": 1,
-          "properties": {
-            "src": "https://picsum.photos/id/1019/1000/600/",
-            "width": 400,
-            "height": 300,
-            "placeholder": true
-          }
-        },
-        {
-          "type": "text",
-          "order": 2,
-          "properties": {
-            "text": [
-              "in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
-              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            ]
-          }
-        },
-        {
-          "type": "gallery",
-          "order": 3,
-          "properties": {
-            "images": [
-              {
-                "original": "https://picsum.photos/id/1018/1000/600/",
-                "thumbnail": "https://picsum.photos/id/1018/250/150/"
-              },
-              {
-                "original": "https://picsum.photos/id/1018/1000/600/",
-                "thumbnail": "https://picsum.photos/id/1018/250/150/"
-              },
-              {
-                "original": "https://picsum.photos/id/1019/1000/600/"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": 1123,
-      "order": 0,
-      "title": "Hyde Park",
-      "type": "park",
-      "location": [51.506814, -0.165580],
-      "layout": [
         {
           "type": "text",
           "order": 0,
@@ -107,6 +153,512 @@
           }
         }
       ]
+    },
+    {
+      "rating": 3.5, 
+      "review_count": 638, 
+      "url": "https://www.yelp.com/biz/the-butchers-daughter-venice-2?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "The Butcher's Daughter", 
+      "coordinates": {
+        "latitude": 33.99166, 
+        "longitude": -118.46916
+      }, 
+      "image": {
+        "src": "https://s3-media2.fl.yelpcdn.com/bphoto/i4ROXfAqk1Ia-nIU22Tojg/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "vegetarian", 
+          "title": "Vegetarian"
+        }, 
+        {
+          "alias": "cafes", 
+          "title": "Cafes"
+        }, 
+        {
+          "alias": "gluten_free", 
+          "title": "Gluten-Free"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1124, 
+      "location": {
+        "city": "Venice", 
+        "display_address": [
+          "1205 Abbot Kinney Blvd", 
+          "Venice, CA 90291"
+        ], 
+        "country": "US", 
+        "address2": null, 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "1205 Abbot Kinney Blvd", 
+        "zip_code": "90291"
+      }
+    }, 
+    {
+      "rating": 4.5, 
+      "review_count": 225, 
+      "url": "https://www.yelp.com/biz/fala-bar-los-angeles-3?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "Fala Bar", 
+      "coordinates": {
+        "latitude": 33.9912589, 
+        "longitude": -118.4692363
+      }, 
+      "image": {
+        "src": "https://s3-media1.fl.yelpcdn.com/bphoto/fU71msNJSwmOj3SEjI21iA/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "salad", 
+          "title": "Salad"
+        }, 
+        {
+          "alias": "sandwiches", 
+          "title": "Sandwiches"
+        }, 
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1125, 
+      "location": {
+        "city": "Los Angeles", 
+        "display_address": [
+          "1146 Abbot Kinney Blvd", 
+          "Los Angeles, CA 90291"
+        ], 
+        "country": "US", 
+        "address2": "", 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "1146 Abbot Kinney Blvd", 
+        "zip_code": "90291"
+      }
+    }, 
+    {
+      "rating": 4.5, 
+      "review_count": 515, 
+      "url": "https://www.yelp.com/biz/tocaya-organica-venice-3?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "Tocaya Organica", 
+      "coordinates": {
+        "latitude": 33.986639, 
+        "longitude": -118.471641
+      }, 
+      "image": {
+        "src": "https://s3-media4.fl.yelpcdn.com/bphoto/jFqnS74hMsUwlvSVvEu0Gg/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "mexican", 
+          "title": "Mexican"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1126, 
+      "location": {
+        "city": "Venice", 
+        "display_address": [
+          "1715 Pacific Ave", 
+          "Venice, CA 90291"
+        ], 
+        "country": "US", 
+        "address2": "", 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "1715 Pacific Ave", 
+        "zip_code": "90291"
+      }
+    },
+    {
+      "rating": 3.5, 
+      "review_count": 211, 
+      "url": "https://www.yelp.com/biz/cairo-cowboy-venice-4?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "Cairo Cowboy", 
+      "coordinates": {
+        "latitude": 33.9872924754827, 
+        "longitude": -118.472856533766
+      }, 
+      "image": {
+        "src": "https://s3-media4.fl.yelpcdn.com/bphoto/LFjFXtAS2GbVrxwH_t1HDQ/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "mediterranean", 
+          "title": "Mediterranean"
+        }, 
+        {
+          "alias": "greek", 
+          "title": "Greek"
+        }, 
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1128, 
+      "location": {
+        "city": "Venice", 
+        "display_address": [
+          "46 Windward Ave", 
+          "Venice, CA 90291"
+        ], 
+        "country": "US", 
+        "address2": "", 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "46 Windward Ave", 
+        "zip_code": "90291"
+      }
+    }, 
+    {
+      "rating": 4, 
+      "review_count": 1588, 
+      "url": "https://www.yelp.com/biz/sage-plant-based-bistro-culver-city-2?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "Sage Plant Based Bistro", 
+      "coordinates": {
+        "latitude": 34.006538, 
+        "longitude": -118.41216
+      }, 
+      "image": {
+        "src": "https://s3-media3.fl.yelpcdn.com/bphoto/Rfa-aAOgj2g0Vf53QKYLOA/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }, 
+        {
+          "alias": "vegetarian", 
+          "title": "Vegetarian"
+        }, 
+        {
+          "alias": "desserts", 
+          "title": "Desserts"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1129, 
+      "location": {
+        "city": "Culver City", 
+        "display_address": [
+          "4130 Sepulveda Blvd", 
+          "Ste G", 
+          "Culver City, CA 90230"
+        ], 
+        "country": "US", 
+        "address2": "Ste G", 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "4130 Sepulveda Blvd", 
+        "zip_code": "90230"
+      }
+    },
+    {
+      "rating": 4.5, 
+      "review_count": 315, 
+      "url": "https://www.yelp.com/biz/shojin-los-angeles-3?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "shojin", 
+      "coordinates": {
+        "latitude": 33.9966735839844, 
+        "longitude": -118.428680419922
+      }, 
+      "image": {
+        "src": "https://s3-media3.fl.yelpcdn.com/bphoto/iV7cDfXu6tBUxor-Bk6mig/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "japanese", 
+          "title": "Japanese"
+        }, 
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }, 
+        {
+          "alias": "gluten_free", 
+          "title": "Gluten-Free"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1131, 
+      "location": {
+        "city": "Los Angeles", 
+        "display_address": [
+          "12406 Washington Blvd", 
+          "Los Angeles, CA 90066"
+        ], 
+        "country": "US", 
+        "address2": null, 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "12406 Washington Blvd", 
+        "zip_code": "90066"
+      }
+    }, 
+    {
+      "rating": 4.5, 
+      "review_count": 555, 
+      "url": "https://www.yelp.com/biz/satdha-plant-based-thai-kitchen-santa-monica-5?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "Satdha Plant-Based Thai Kitchen", 
+      "coordinates": {
+        "latitude": 34.00978, 
+        "longitude": -118.48035
+      }, 
+      "image": {
+        "src": "https://s3-media3.fl.yelpcdn.com/bphoto/fDHXZ_Fop3B9apDAKjSAIQ/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "thai", 
+          "title": "Thai"
+        }, 
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }, 
+        {
+          "alias": "vegetarian", 
+          "title": "Vegetarian"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1132, 
+      "location": {
+        "city": "Santa Monica", 
+        "display_address": [
+          "2218 Lincoln Blvd", 
+          "Santa Monica, CA 90405"
+        ], 
+        "country": "US", 
+        "address2": "", 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "2218 Lincoln Blvd", 
+        "zip_code": "90405"
+      }
+    },
+    {
+      "rating": 4, 
+      "review_count": 1242, 
+      "url": "https://www.yelp.com/biz/native-foods-cafe-los-angeles?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "Native Foods Cafe", 
+      "coordinates": {
+        "latitude": 34.0599747, 
+        "longitude": -118.4460684
+      }, 
+      "image": {
+        "src": "https://s3-media1.fl.yelpcdn.com/bphoto/ZzkHoT2UR9dPFYIlpjTXVA/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }, 
+        {
+          "alias": "vegetarian", 
+          "title": "Vegetarian"
+        }, 
+        {
+          "alias": "newamerican", 
+          "title": "American (New)"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1137, 
+      "location": {
+        "city": "Los Angeles", 
+        "display_address": [
+          "1114 Gayley Ave", 
+          "Los Angeles, CA 90024"
+        ], 
+        "country": "US", 
+        "address2": null, 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "1114 Gayley Ave", 
+        "zip_code": "90024"
+      }
+    },
+    {
+      "rating": 4.5, 
+      "review_count": 376, 
+      "url": "https://www.yelp.com/biz/the-hive-santa-monica-11?adjust_creative=yYs9KAiD9CS00a5KUZkPVA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=yYs9KAiD9CS00a5KUZkPVA", 
+      "title": "The Hive", 
+      "coordinates": {
+        "latitude": 34.0167041, 
+        "longitude": -118.491248
+      }, 
+      "image": {
+        "src": "https://s3-media4.fl.yelpcdn.com/bphoto/pi3OtmRdEKpkv6T2ngcmSg/o.jpg", 
+        "height": 480, 
+        "width": 600
+      }, 
+      "categories": [
+        {
+          "alias": "juicebars", 
+          "title": "Juice Bars & Smoothies"
+        }, 
+        {
+          "alias": "raw_food", 
+          "title": "Live/Raw Food"
+        }, 
+        {
+          "alias": "vegan", 
+          "title": "Vegan"
+        }
+      ], 
+      "layout": [
+        {
+          "type": "text", 
+          "order": 0, 
+          "properties": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", 
+              "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco", 
+              "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+            ]
+          }
+        }
+      ], 
+      "type": "restaurant", 
+      "id": 1141, 
+      "location": {
+        "city": "Santa Monica", 
+        "display_address": [
+          "606 Broadway", 
+          "Santa Monica, CA 90401"
+        ], 
+        "country": "US", 
+        "address2": null, 
+        "address3": "", 
+        "state": "CA", 
+        "address1": "606 Broadway", 
+        "zip_code": "90401"
+      }
     }
   ],
   "transportation": [

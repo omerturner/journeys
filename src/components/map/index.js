@@ -1,22 +1,19 @@
-import { useSelector } from 'react-redux';
-import { journeySelector } from '../journey/journey.selectors';
 import styled from 'styled-components';
 import GoogleMapReact from 'google-map-react';
 import _ from 'lodash';
 import { useState } from 'react';
 import { Card, Rate, Tag, Image } from 'antd';
 
-
-
-const places = require('./places.json');
  
 const Wrapper = styled.main`
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 100vh;
 `;
 
 // InfoWindow component
-const InfoWindow = ({ place: { rating, name, categories, image_url } }) => {
+const InfoWindow = ({ place: { rating, title, categories, image } }) => {
   const StyledInfoWindow = styled(Card)`
     position: relative;
     bottom: 400px;
@@ -34,9 +31,9 @@ const InfoWindow = ({ place: { rating, name, categories, image_url } }) => {
     <StyledInfoWindow 
       cover={<Image 
         width={200} 
-        height={200} 
-        src={image_url} />}>
-      <Card.Meta title={name} description={
+        style={{ maxHeight: 200 }} 
+        src={image.src} />}>
+      <Card.Meta title={title} description={
         <>
           <Rate allowHalf disabled defaultValue={rating} style={{ marginBottom: 15 }}/>
           {
@@ -79,9 +76,7 @@ const Marker = ({ place }) => {
   );
 };
  
-const Map = () => {
-
-  const journey = useSelector(journeySelector('london'));
+const Map = ({ journey }) => {
 
   const defaultProps = {
     center: [34.0022, -118.4437],
@@ -96,7 +91,7 @@ const Map = () => {
         defaultZoom={defaultProps.zoom}
       >
         { 
-          places.businesses.map(place => (
+          journey.locations.map(place => (
             <Marker 
               lat={place.coordinates.latitude}
               lng={place.coordinates.longitude}
