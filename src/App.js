@@ -1,14 +1,20 @@
-import { Provider } from 'react-redux';
 import 'antd/dist/antd.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import Journey from './components/journey';
 
-const journey = require('./test/mock/journey.mock.json');
-
-const App = ({ store }) => {
+const App = () => {
   return (
-    <Provider store={store}>
-      <Journey journey={journey} />
-    </Provider>
+    <Router>
+      <Switch>
+        <Route path="/" exact />
+        <Route path="/journey/:name" component={Journey} exact />
+      </Switch>
+    </Router>
   );
 }
 
