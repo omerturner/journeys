@@ -15,3 +15,9 @@ export const loadJourneyFailure = () => ({
   type: LOAD_JOURNEY_FAILURE
 });
 
+export const HIGHLIGHT_LOCATION = 'HIGHLIGHT_LOCATION';
+export const highlightLocation = (journey, location) => ({
+  type: HIGHLIGHT_LOCATION,
+  payload: { journey, location }
+});
+

@@ -7,10 +7,12 @@ import TextBlock from '../text';
 import { LayoutItemContainer, StyledMetadata, StyledTitle } from './style';
 import Moment from 'moment';
 import { getType } from './tripType';
+import { connect } from 'react-redux';
+import { highlightLocation } from '../journey/journey.actions';
 
 const { Title } = Typography;
 
-const Trip = ({ journey }) => {
+const Trip = ({ journey, showLocation }) => {
 
   const renderLayoutItem = (item) => {
     const { properties: props } = item;
@@ -36,7 +38,12 @@ const Trip = ({ journey }) => {
           journey.locations.map(location => {
             const { icon, label } = getType(location.type);
             return (
-              <Timeline.Item key={location.id} dot={icon}>
+              <Timeline.Item 
+                key={location.id} 
+                dot={icon} 
+                onMouseEnter={() => showLocation(location)} 
+                onMouseLeave={() => showLocation({ id: -1 })} 
+              >
                 <StyledTitle level={3}>{location.title}</StyledTitle>
                 <StyledMetadata type="secondary">{label}</StyledMetadata>
                 <StyledMetadata type="secondary">{location.location.address1}</StyledMetadata>
@@ -70,4 +77,10 @@ const Trip = ({ journey }) => {
   )
 }
 
-export default Trip;
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    showLocation: (location) => dispatch(highlightLocation(ownProps.journey, location))
+  }
+}
+
+export default connect(()=>{}, mapDispatchToProps)(Trip);

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import GoogleMapReact from 'google-map-react';
 import _ from 'lodash';
-import { useState } from 'react';
+import { connect } from 'react-redux';
+import { highlightLocation } from '../journey/journey.actions';
 import { Card, Rate, Tag, Image } from 'antd';
 
  
@@ -47,7 +48,7 @@ const InfoWindow = ({ place: { rating, title, categories, image } }) => {
 };
 
 // Marker component
-const Marker = ({ place }) => {
+const Marker = ({ place, showLocation }) => {
   const StlyedMarker = styled.div`
     width: 18px;
     height: 18px;
@@ -62,19 +63,23 @@ const Marker = ({ place }) => {
     }
   `;
 
-  const [ showDetails, setShowDetails ] = useState(false);
-
   return (
     <>
       <StlyedMarker 
-        onMouseEnter={() => setShowDetails(true)}
-        onMouseLeave={() => setShowDetails(false)}
+        onClick={() => showLocation(place)}
       />
 
-      {showDetails && <InfoWindow place={place} />}
+      {place.isActive && <InfoWindow place={place} />}
     </>
   );
 };
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    showLocation: (location) => dispatch(highlightLocation(ownProps.journey, location))
+  }
+}
+const ConnectedMarker = connect(()=>{}, mapDispatchToProps)(Marker);
  
 const Map = ({ journey }) => {
 
@@ -92,9 +97,10 @@ const Map = ({ journey }) => {
       >
         { 
           journey.locations.map(place => (
-            <Marker 
+            <ConnectedMarker 
               lat={place.coordinates.latitude}
               lng={place.coordinates.longitude}
+              journey={journey}
               place={place} />
           ))
         }
@@ -104,5 +110,5 @@ const Map = ({ journey }) => {
   );
   
 }
- 
+
 export default Map;
