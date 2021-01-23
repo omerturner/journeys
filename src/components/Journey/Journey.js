@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import Trip from '../trip';
-import Map from '../map';
+import Trip from './Trip/Trip';
+import Map from './Map/Map';
 import { connect, useSelector } from 'react-redux';
-import { journeySelector } from './journey.selectors';
-import { loadJourneyByName } from './journey.thunks';
+import { journeySelector } from '../../store/modules/journey/journey.selectors';
+import { loadJourneyByName } from '../../store/modules/journey/journey.thunks';
 import { Row, Col } from 'antd';
 
 

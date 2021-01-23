@@ -1,14 +1,14 @@
 import React from 'react';
 import _ from 'lodash';
 import { Timeline, Typography, Divider, Image, Rate } from 'antd';
-import { TYPE_GALLERY, TYPE_IMAGE, TYPE_TEXT } from '../../store/constants';
-import Gallery from '../gallery';
-import TextBlock from '../text';
+import { TYPE_GALLERY, TYPE_IMAGE, TYPE_TEXT } from '../../../store/constants';
+import Gallery from './Layout/Gallery/Gallery';
+import TextBlock from './Layout/TextBlock/TextBlock';
 import { LayoutItemContainer, StyledMetadata, StyledTitle } from './style';
 import Moment from 'moment';
 import { getType } from './tripType';
 import { connect } from 'react-redux';
-import { highlightLocation } from '../journey/journey.actions';
+import { highlightLocation } from '../../../store/modules/journey/journey.actions';
 
 const { Title } = Typography;
 

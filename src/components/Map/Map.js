@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import GoogleMapReact from 'google-map-react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
-import { highlightLocation } from '../journey/journey.actions';
+import { highlightLocation } from '../../../store/modules/journey/journey.actions';
 import { Card, Rate, Tag, Image } from 'antd';
 
  

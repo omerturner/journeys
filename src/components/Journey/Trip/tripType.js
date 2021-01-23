@@ -16,7 +16,6 @@ const types = [
 ]
 
 const getType = (id) => {
-  console.log(id);
   return _.find(types, { id });
 }
 

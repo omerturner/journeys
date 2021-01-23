@@ -3,7 +3,7 @@ import { loadJourneyInProgress, loadJourneyFailure, loadJourneySuccess } from '.
 export const loadJourneyByName = (name) => async (dispatch, getState) => {
   try {
     dispatch(loadJourneyInProgress());
-    const journey = require('../../test/mock/journey.mock.json');
+    const journey = require('../../../test/mock/journey.mock.json');
     dispatch(loadJourneySuccess(journey));
   } catch (e) {
     dispatch(loadJourneyFailure());

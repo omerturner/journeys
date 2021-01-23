@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import journeyReducer from '../components/journey/journey.reducers';
+import journeyReducer from './modules/journey/journey.reducers';
 
 const reducers = () => {
   return combineReducers({

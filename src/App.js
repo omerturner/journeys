@@ -5,7 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Journey from './components/journey';
+import Journey from './components/Journey/Journey';
 
 const App = () => {
   return (
