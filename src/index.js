@@ -5,14 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import configureStore from './store/store';
+import { ConfigProvider } from 'antd';
+
 
 const store = configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-        <App store={store} />
-    </Provider>
+    <ConfigProvider>
+      <Provider store={store}>
+          <App store={store} />
+      </Provider>
+    </ConfigProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

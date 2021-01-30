@@ -1,15 +1,13 @@
 import styled from 'styled-components';
+import Icon from '@ant-design/icons';
 
-export const StlyedMarker = styled.div`
-  width: 18px;
-  height: 18px;
-  background-color: #000;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  user-select: none;
-  transform: translate(-50%, -50%);
-  cursor: 'pointer';
-  &:hover {
-    z-index: 1;
-  }
+export const MapIcon = styled(Icon)`
+  font-size: 15px;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px 5px;
 `;
